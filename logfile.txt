@@ -1,27 +1,19 @@
-2026-01-22 | ERROR | Timestamp incomplete
-2026-01-22 06:02:30 | INFO
-2026-01-22 | ERROR | Timestamp incomplete
-2026-01-22 06:01:12 | INFO | Application started
-2026-01-22 06:02:30 | INFO
-2026-01-22 06:01:12 | INFO | Application started
-2026-01-22 06:02:45 | INFO | Extra | Separator | Here
-2026-01-22 | ERROR | Timestamp incomplete
 2026-01-22 06:01:12 | INFO | Application started
 2026-01-22 06:01:15 | INFO | Loading configuration file
+2026-01-22 06:02:30 | INFO
 2026-01-22 06:01:18 | WARNING | Config file missing optional field
 2026-01-22 06:01:22 | INFO | Connecting to database
 2026-01-22 06:01:25 | ERROR | Database connection failed
-2026-01-22 06:02:30 | INFO
 2026-01-22 06:01:30 | INFO | Retrying database connection
 2026-01-22 06:01:35 | INFO | Database connection successful
 2026-01-22 06:01:40 | INFO | Starting background worker
+2026-01-22 | ERROR | Timestamp incomplete
+ERROR | 2026-01-22 06:02:40 | Wrong field order
 2026-01-22 06:01:45 | WARNING | High memory usage detected
 2026-01-22 06:01:50 | INFO | Processing user request
-2026-01-22 | ERROR | Timestamp incomplete
 2026-01-22 06:01:55 | ERROR | Failed to process user request
 2026-01-22 06:02:00 | INFO | User request retried successfully
 2026-01-22 06:02:05 | INFO | Writing data to disk
-ERROR | 2026-01-22 06:02:40 | Wrong field order
 2026-01-22 06:02:10 | ERROR | Disk write permission denied
 2026-01-22 06:02:15 | INFO | Shutting down worker
 2026-01-22 06:02:20 | INFO | Application shutting down
