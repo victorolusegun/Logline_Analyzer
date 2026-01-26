@@ -5,6 +5,7 @@ print('Welcome \n')
 valid = 0
 invalid = 0
 
+# file_name  = input('Enter fle path')
 with open('logfile.txt', 'r') as log_file:
     for line in log_file:
         # print(line, end='')
