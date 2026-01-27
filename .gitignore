@@ -1,2 +1,4 @@
 #ignore all .txt files
 *.txt
+trial.py
+.gitignore
