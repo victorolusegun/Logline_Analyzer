@@ -2,9 +2,25 @@
 from datetime import datetime
 
 # Placeholder Welcome message
-print('Welcome \n')
+print('Welcome')
 
-# Initializing counters
+# Functions
+def accept_input(user_input):
+    print('Please try again')
+    user_input = input('Enter file path: \n')
+    return user_input
+
+def file_extension(valid_file):
+    ext = '.txt'
+    if sth is False:
+        valid_file = valid_file + ext
+    return valid_file
+
+def checking_file_validity(file):
+    check = file.endswith('.txt')
+    return check
+
+# Initializing counter variables
 valid = 0
 invalid = 0
 attempt = 0
@@ -15,8 +31,8 @@ alert = ['INFO', 'ERROR', 'WARNING']
 # Requesting file path from user and input validation
 file_name  = input('Enter file path: \n')
 while file_name  == '' and attempt < 1:
-    print('No file path provided. Please try again.\n')
-    file_name  = input('Enter file path: \n')
+    print('No file path provided.')
+    file_name = accept_input(file_name)
     if file_name != '':
         print('Exiting')
         break
@@ -26,10 +42,9 @@ while file_name  == '' and attempt < 1:
         quit()
 # print('Loop exited')
 
-sth = file_name.endswith('.txt')
-ext = '.txt'
-if sth is False:
-    file_name = file_name + ext
+sth = checking_file_validity(file_name)
+# if sth is False:
+file_name = file_extension(file_name)
     # print(file_name)
 
 try:
@@ -57,7 +72,13 @@ try:
             else:
                 invalid = invalid + 1
 except FileNotFoundError:
+    print(f'{file_name} not found. Exiting program.')
     quit()
+    # print(f'{file_name} not found.')
+    # file_name = accept_input(file_name)
+    # if file_name != '':
+    #     sth = checking_file_validity(file_name)
+
 # Writing reeport summary into a new file
 with open('summary.txt', 'w') as log_summary:
     log_summary.write(f'Summary Report\n')
